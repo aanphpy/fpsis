@@ -1,0 +1,8 @@
+object FormSekolah: TFormSekolah
+  Left = 339
+  Height = 313
+  Top = 218
+  Width = 517
+  Caption = 'Sekolah'
+  LCLVersion = '2.2.6.0'
+end

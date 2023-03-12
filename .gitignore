@@ -1,0 +1,11 @@
+*
+!.gitignore
+!*.pas
+!*.lfm
+!*.lpi
+!*.lpr
+!*.lps
+!*.res
+!*.ico
+!LICENSE
+!README.md

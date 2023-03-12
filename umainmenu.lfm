@@ -1,0 +1,97 @@
+object FormMenu: TFormMenu
+  Left = 206
+  Height = 84
+  Top = 86
+  Width = 1093
+  AutoSize = True
+  Caption = 'SISTEM INFORMASI SEKOLAH'
+  Menu = MainMenu
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '2.2.6.0'
+  WindowState = wsMaximized
+  object MainMenu: TMainMenu
+    Left = 32
+    Top = 14
+    object MenuApp: TMenuItem
+      Caption = 'App'
+      object MenuLogin: TMenuItem
+        Caption = 'Login'
+        OnClick = MenuLoginClick
+      end
+      object Separator3: TMenuItem
+        Caption = '-'
+      end
+      object MenuKeluar: TMenuItem
+        Caption = 'Keluar'
+        OnClick = MenuKeluarClick
+      end
+    end
+    object MenuSekolah: TMenuItem
+      Caption = 'Sekolah'
+      object MenuSekolahSekolah: TMenuItem
+        Caption = 'Sekolah'
+        OnClick = MenuSekolahSekolahClick
+      end
+      object MenuTahunAjaran: TMenuItem
+        Caption = 'Tahun Ajaran'
+        OnClick = MenuTahunAjaranClick
+      end
+    end
+    object MenuGuru: TMenuItem
+      Caption = 'Guru'
+      object MenuSekolahAsal: TMenuItem
+        Caption = 'Sekolah Asal'
+        OnClick = MenuSekolahAsalClick
+      end
+      object MenuCalonGuru: TMenuItem
+        Caption = 'Calon Guru'
+        OnClick = MenuCalonGuruClick
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object MenuGuruGuru: TMenuItem
+        Caption = 'Guru'
+        OnClick = MenuGuruGuruClick
+      end
+    end
+    object MenuSiswa: TMenuItem
+      Caption = 'Siswa'
+      object MenuSiswaSekolahAsal: TMenuItem
+        Caption = 'Sekolah Asal'
+        OnClick = MenuSiswaSekolahAsalClick
+      end
+      object MenuCalonSiswa: TMenuItem
+        Caption = 'Calon Siswa'
+        OnClick = MenuCalonSiswaClick
+      end
+      object MenuWaliMurid: TMenuItem
+        Caption = 'Wali Murid'
+        OnClick = MenuWaliMuridClick
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuSiswaSiswa: TMenuItem
+        Caption = 'Siswa'
+        OnClick = MenuSiswaSiswaClick
+      end
+    end
+    object MenuKelas: TMenuItem
+      Caption = 'Kelas'
+      object MenuRuangKelas: TMenuItem
+        Caption = 'Ruang Kelas'
+        OnClick = MenuRuangKelasClick
+      end
+      object MenuKelasKelas: TMenuItem
+        Caption = 'Kelas'
+        OnClick = MenuKelasKelasClick
+      end
+      object MenuKelasSiswa: TMenuItem
+        Caption = 'Kelas Siswa'
+        OnClick = MenuKelasSiswaClick
+      end
+    end
+  end
+end

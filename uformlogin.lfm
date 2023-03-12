@@ -1,0 +1,57 @@
+object FormLogin: TFormLogin
+  Left = 582
+  Height = 196
+  Top = 185
+  Width = 408
+  BorderStyle = bsDialog
+  Caption = 'SISTEM INFORMASI SEKOLAH'
+  ClientHeight = 196
+  ClientWidth = 408
+  Position = poDesktopCenter
+  LCLVersion = '2.2.6.0'
+  object LabelUsername: TLabel
+    Left = 32
+    Height = 17
+    Top = 48
+    Width = 67
+    Caption = 'Username'
+    ParentColor = False
+  end
+  object LabelPassword: TLabel
+    Left = 32
+    Height = 17
+    Top = 88
+    Width = 62
+    Caption = 'Password'
+    ParentColor = False
+  end
+  object EditUsername: TEdit
+    Left = 128
+    Height = 26
+    Top = 48
+    Width = 248
+    TabOrder = 0
+    Text = 'admin'
+    TextHint = 'johndoe'
+  end
+  object EditPassword: TEdit
+    Left = 128
+    Height = 26
+    Top = 88
+    Width = 248
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+    Text = 'admin'
+    TextHint = 'secret'
+  end
+  object ButtonLogin: TButton
+    Left = 301
+    Height = 33
+    Top = 139
+    Width = 75
+    Caption = 'Login'
+    OnClick = ButtonLoginClick
+    TabOrder = 2
+  end
+end
