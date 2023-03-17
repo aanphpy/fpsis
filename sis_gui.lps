@@ -7,18 +7,10 @@
       <Unit>
         <Filename Value="sis_gui.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="19"/>
-        <CursorPos X="25" Y="5"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="20"/>
+        <CursorPos X="3" Y="26"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="sis.pas"/>
-        <ComponentName Value="FormLogin"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uformlogin"/>
-        <UsageCount Value="20"/>
       </Unit>
       <Unit>
         <Filename Value="umainmenu.pas"/>
@@ -26,55 +18,25 @@
         <ComponentName Value="FormMenu"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="179"/>
-        <CursorPos X="23" Y="195"/>
-        <UsageCount Value="26"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="128"/>
+        <CursorPos X="3" Y="136"/>
+        <UsageCount Value="78"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uformsekolah.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSekolah"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="18"/>
-        <UsageCount Value="22"/>
-      </Unit>
-      <Unit>
-        <Filename Value="utahunajaran.pas"/>
-        <ComponentName Value="FormTahunAjaran"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uformtahunajaran"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11"/>
-        <UsageCount Value="21"/>
-      </Unit>
-      <Unit>
-        <Filename Value="usekolahasalguru.pas"/>
-        <ComponentName Value="FormSekolahAsalGuru"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uformsekolahasalguru"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11"/>
-        <UsageCount Value="21"/>
-      </Unit>
-      <Unit>
-        <Filename Value="ucalonguru.pas"/>
-        <ComponentName Value="FormCalonGuru"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uformcalonguru"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11"/>
-        <UsageCount Value="21"/>
-      </Unit>
-      <Unit>
-        <Filename Value="uguru.pas"/>
-        <ComponentName Value="FormGuru"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="uformguru"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11"/>
-        <UsageCount Value="21"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="23"/>
+        <CursorPos X="67" Y="9"/>
+        <UsageCount Value="74"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uformsekolahasalsiswa.pas"/>
@@ -83,7 +45,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="20" Y="11"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="73"/>
       </Unit>
       <Unit>
         <Filename Value="uformcalonsiswa.pas"/>
@@ -92,34 +54,41 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="21"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="uformwalimurid.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormWaliMurid"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="5"/>
         <CursorPos X="20"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uformsiswa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSiswa"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="16"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="25" Y="21"/>
+        <UsageCount Value="72"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uformruangkelas.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormRuangKelas"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="9"/>
         <CursorPos X="21"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uformkelas.pas"/>
@@ -128,7 +97,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="16"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="uformkelassiswa.pas"/>
@@ -137,7 +106,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="21"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="uformlogin.pas"/>
@@ -145,25 +114,24 @@
         <ComponentName Value="FormLogin"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="3" Y="43"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="97"/>
+        <CursorPos X="42" Y="48"/>
+        <UsageCount Value="72"/>
         <Loaded Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="/usr/share/lazarus/2.2.6/lcl/include/customform.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2427"/>
-        <CursorPos Y="2412"/>
-        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="uformtahunajaran.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormTahunAjaran"/>
         <HasResources Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos Y="26"/>
-        <UsageCount Value="20"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="40"/>
+        <CursorPos X="47" Y="9"/>
+        <UsageCount Value="72"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="uformsekolahasalguru.pas"/>
@@ -174,7 +142,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="uformcalonguru.pas"/>
@@ -185,7 +153,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="uformguru.pas"/>
@@ -196,45 +164,236 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="72"/>
       </Unit>
       <Unit>
         <Filename Value="udbconn.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
-        <CursorPos Y="6"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="10"/>
+        <CursorPos X="18" Y="15"/>
+        <UsageCount Value="68"/>
         <Loaded Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="uappconn.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="7"/>
+        <CursorPos X="3" Y="21"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sis.pas"/>
+        <ComponentName Value="FormLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uformlogin"/>
+        <UsageCount Value="16"/>
+      </Unit>
+      <Unit>
+        <Filename Value="utahunajaran.pas"/>
+        <ComponentName Value="FormTahunAjaran"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uformtahunajaran"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="usekolahasalguru.pas"/>
+        <ComponentName Value="FormSekolahAsalGuru"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uformsekolahasalguru"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ucalonguru.pas"/>
+        <ComponentName Value="FormCalonGuru"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uformcalonguru"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uguru.pas"/>
+        <ComponentName Value="FormGuru"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uformguru"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="11"/>
+        <UsageCount Value="17"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/lazarus/2.2.6/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2427"/>
+        <CursorPos Y="2412"/>
+        <UsageCount Value="6"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus2_2_6/fpc/3.2.2/source/packages/fcl-db/src/sqldb/sqldb.pp"/>
+        <UnitName Value="SQLDB"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="3418"/>
+        <CursorPos X="27" Y="3439"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus2_2_6/lcl/include/customform.inc"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="2253"/>
+        <CursorPos Y="2264"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../lazarus2_2_6/lcl/include/messagedialogs.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="197"/>
+        <CursorPos X="11" Y="206"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uformtahunajaran.lfm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="70"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uformwalimurid.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="6">
+    <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="sis_gui.lpr"/>
-        <Caret Line="24" Column="26" TopLine="15"/>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="165" Column="14" TopLine="162"/>
       </Position>
       <Position>
-        <Filename Value="sis_gui.lpr"/>
-        <Caret Line="25" Column="26" TopLine="15"/>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="172" Column="67" TopLine="163"/>
       </Position>
       <Position>
-        <Filename Value="uformlogin.pas"/>
-        <Caret Line="48" Column="35" TopLine="32"/>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="166" Column="37" TopLine="163"/>
       </Position>
       <Position>
-        <Filename Value="uformlogin.pas"/>
-        <Caret Line="43" Column="3" TopLine="38"/>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="94" Column="33" TopLine="74"/>
       </Position>
       <Position>
-        <Filename Value="uformlogin.pas"/>
-        <Caret Line="44" Column="3" TopLine="39"/>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="95" Column="33" TopLine="75"/>
       </Position>
       <Position>
-        <Filename Value="uformlogin.pas"/>
-        <Caret Line="43" Column="3" TopLine="38"/>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="96" Column="33" TopLine="76"/>
       </Position>
       <Position>
-        <Filename Value="uformlogin.pas"/>
-        <Caret Line="41" Column="51" TopLine="38"/>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="67" Column="9" TopLine="62"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="70" Column="7" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="86" Column="16" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="81" Column="22" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="82" Column="14" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="81" Column="24" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="80" Column="16" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="uformsekolah.pas"/>
+        <Caret Line="66" Column="12" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="76" Column="54" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="9" Column="13"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="171" Column="8" TopLine="161"/>
+      </Position>
+      <Position>
+        <Filename Value="uformtahunajaran.pas"/>
+        <Caret Line="7" Column="39" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="uformtahunajaran.pas"/>
+        <Caret Line="86" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="uformtahunajaran.pas"/>
+        <Caret Line="44" Column="7" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="uformtahunajaran.pas"/>
+        <Caret Line="45" Column="20" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="uformtahunajaran.pas"/>
+        <Caret Line="86" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="149" Column="3" TopLine="146"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="94" Column="36" TopLine="86"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="239" Column="19" TopLine="230"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="142" Column="3" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="160" Column="3" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="137" Column="34" TopLine="131"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="160" Column="3" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="umainmenu.pas"/>
+        <Caret Line="137" Column="28" TopLine="128"/>
       </Position>
     </JumpHistory>
     <RunParams>

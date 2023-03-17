@@ -6,17 +6,18 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, Menus,
-  uformlogin,
-  uformsekolah, uformtahunajaran,
-  uformsekolahasalguru, uformcalonguru, uformguru,
-  uformsekolahasalsiswa, uformwalimurid, uformcalonsiswa, uformsiswa,
-  uformruangkelas, uformkelas, uformkelassiswa;
+  ExtCtrls, DB,
+  uformlogin, uformsekolah, uformtahunajaran, uformsekolahasalguru,
+  uformcalonguru, uformguru, uformsekolahasalsiswa, uformwalimurid,
+  uformcalonsiswa, uformsiswa, uformruangkelas, uformkelas, uformkelassiswa,
+  uappconn;
 
 type
 
   { TFormMenu }
 
   TFormMenu = class(TForm)
+    IconList: TImageList;
     MainMenu: TMainMenu;
     MenuLogin: TMenuItem;
     Separator3: TMenuItem;
@@ -55,6 +56,7 @@ type
     AFormKelasSiswa: TFormKelasSiswa;
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure ImageBackgroundResize(Sender: TObject);
     procedure MenuCalonGuruClick(Sender: TObject);
     procedure MenuCalonSiswaClick(Sender: TObject);
     procedure MenuGuruGuruClick(Sender: TObject);
@@ -73,6 +75,7 @@ type
     procedure MenuWaliMuridClick(Sender: TObject);
     procedure OnFormLoginClosed(Sender: TObject; var CloseAction: TCloseAction);
     procedure ShowFormLogin;
+    procedure CloseActiveForm;
   private
 
   public
@@ -88,6 +91,16 @@ implementation
 
 { TFormMenu }
 
+procedure TFormMenu.CloseActiveForm;
+var
+  i: Integer;
+begin
+  for i := 1 to (Screen.FormCount - 1) do begin
+    if Screen.Forms[i] is TForm and Screen.Forms[i].IsVisible then begin
+      Screen.Forms[i].Close;
+    end;
+  end;
+end;
 
 procedure TFormMenu.DisableMenus;
 begin
@@ -108,7 +121,7 @@ end;
 procedure TFormMenu.MenuLoginClick(Sender: TObject);
 begin
   DisableMenus;
-  AppUserID := 0;
+  AppUser.UID := 0;
   ShowFormLogin;
 end;
 
@@ -156,13 +169,28 @@ end;
 
 procedure TFormMenu.MenuKeluarClick(Sender: TObject);
 begin
-  Halt;
+  try
+    CloseActiveForm;
+  finally
+    //Halt;
+    Application.Terminate;
+  end;
 end;
 
 procedure TFormMenu.FormShow(Sender: TObject);
 begin
   DisableMenus;
   ShowFormLogin;
+end;
+
+procedure TFormMenu.FormCreate(Sender: TObject);
+begin
+  Self.Caption := APP_NAME + ' v' + APP_VERSION;
+end;
+
+procedure TFormMenu.ImageBackgroundResize(Sender: TObject);
+begin
+
 end;
 
 procedure TFormMenu.MenuCalonGuruClick(Sender: TObject);
@@ -195,20 +223,20 @@ begin
   AFormKelasSiswa.Show;
 end;
 
-procedure TFormMenu.FormCreate(Sender: TObject);
-begin
-
-end;
-
 procedure TFormMenu.OnFormLoginClosed(Sender: TObject; var CloseAction: TCloseAction);
 begin
-  if AppUserID > 0 then begin
+  if AppUser.UID > 0 then begin
+    ShowMessage('Selamat datang : ' + AppUser.Nama);
+    Self.Caption := APP_NAME + ' v' + APP_VERSION + ' | ' + AppUser.Nama;
     EnableMenus;
+  end else begin
+    Self.Caption := APP_NAME + ' v' + APP_VERSION;
   end;
 end;
 
 procedure TFormMenu.ShowFormLogin;
 begin
+  CloseActiveForm;
   AFormLogin := TFormLogin.Create(Self);
   try
     AFormLogin.OnClose := @OnFormLoginClosed;

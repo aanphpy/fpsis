@@ -10,6 +10,8 @@
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
+        <TextName Value="teknopedian.sis"/>
+        <TextDesc Value="Sistem Informasi Sekolah"/>
       </XPManifest>
       <Icon Value="0"/>
     </General>
@@ -47,6 +49,7 @@
         <Filename Value="uformsekolah.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSekolah"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
@@ -65,12 +68,14 @@
         <Filename Value="uformwalimurid.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormWaliMurid"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="uformsiswa.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="FormSiswa"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
@@ -101,7 +106,9 @@
       <Unit>
         <Filename Value="uformtahunajaran.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormTahunAjaran"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="uformsekolahasalguru.pas"/>
@@ -125,6 +132,10 @@
         <Filename Value="udbconn.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="uappconn.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -137,6 +148,9 @@
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>

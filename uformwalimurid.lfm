@@ -1,7 +1,7 @@
 object FormWaliMurid: TFormWaliMurid
-  Left = 349
+  Left = 429
   Height = 240
-  Top = 163
+  Top = 213
   Width = 320
   Caption = 'Wali Murid'
   LCLVersion = '2.2.6.0'

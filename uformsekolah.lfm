@@ -1,8 +1,212 @@
 object FormSekolah: TFormSekolah
-  Left = 339
-  Height = 313
-  Top = 218
-  Width = 517
+  Left = 286
+  Height = 387
+  Top = 125
+  Width = 900
   Caption = 'Sekolah'
+  ClientHeight = 387
+  ClientWidth = 900
+  OnClose = FormClose
+  OnShow = FormShow
   LCLVersion = '2.2.6.0'
+  object LabelNama: TLabel
+    Left = 16
+    Height = 15
+    Top = 80
+    Width = 32
+    Caption = 'Nama'
+    ParentColor = False
+  end
+  object LabelAlamat: TLabel
+    Left = 16
+    Height = 15
+    Top = 112
+    Width = 38
+    Caption = 'Alamat'
+    ParentColor = False
+  end
+  object DBGrid1: TDBGrid
+    Left = 16
+    Height = 144
+    Top = 232
+    Width = 864
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Caption = 'Nama'
+        Width = 128
+        FieldName = 'nama'
+      end    
+      item
+        Title.Caption = 'Email'
+        Width = 128
+        FieldName = 'email'
+      end    
+      item
+        Title.Caption = 'Telepon'
+        Width = 128
+        FieldName = 'telepon'
+      end    
+      item
+        Title.Caption = 'Alamat'
+        Width = 1024
+        FieldName = 'alamat'
+      end>
+    DataSource = dbsrc
+    TabOrder = 0
+  end
+  object LabelTelepon: TLabel
+    Left = 16
+    Height = 15
+    Top = 140
+    Width = 43
+    Caption = 'Telepon'
+    ParentColor = False
+  end
+  object LabelEmail: TLabel
+    Left = 16
+    Height = 15
+    Top = 168
+    Width = 29
+    Caption = 'Email'
+    ParentColor = False
+  end
+  object EditNama: TDBEdit
+    Left = 80
+    Height = 23
+    Top = 80
+    Width = 288
+    DataField = 'nama'
+    DataSource = dbsrc
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object EditAlamat: TDBEdit
+    Left = 80
+    Height = 23
+    Top = 112
+    Width = 800
+    DataField = 'alamat'
+    DataSource = dbsrc
+    MaxLength = 0
+    TabOrder = 2
+  end
+  object EditTelepon: TDBEdit
+    Left = 80
+    Height = 23
+    Top = 140
+    Width = 288
+    DataField = 'telepon'
+    DataSource = dbsrc
+    MaxLength = 0
+    TabOrder = 3
+  end
+  object EditEmail: TDBEdit
+    Left = 80
+    Height = 23
+    Top = 168
+    Width = 288
+    DataField = 'email'
+    DataSource = dbsrc
+    MaxLength = 0
+    TabOrder = 4
+  end
+  object dbnav: TDBNavigator
+    Left = 8
+    Height = 32
+    Top = 8
+    Width = 376
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 32
+    ClientWidth = 376
+    DataSource = dbsrc
+    Options = []
+    TabOrder = 5
+  end
+  object DBCAktif: TDBCheckBox
+    Left = 80
+    Height = 23
+    Top = 200
+    Width = 90
+    DataField = 'aktif'
+    DataSource = dbsrc
+    TabOrder = 6
+    ValueChecked = 'True'
+    ValueUnchecked = 'False'
+  end
+  object LabelAktif: TLabel
+    Left = 16
+    Height = 15
+    Top = 200
+    Width = 25
+    Caption = 'Aktif'
+    ParentColor = False
+  end
+  object dbq: TSQLQuery
+    PacketRecords = -1
+    MaxIndexesCount = 4
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+        Precision = -1
+      end    
+      item
+        Name = 'nama'
+        DataType = ftString
+        Precision = -1
+        Size = 128
+      end    
+      item
+        Name = 'alamat'
+        DataType = ftString
+        Precision = -1
+        Size = 1024
+      end    
+      item
+        Name = 'telepon'
+        DataType = ftString
+        Precision = -1
+        Size = 32
+      end    
+      item
+        Name = 'email'
+        DataType = ftString
+        Precision = -1
+        Size = 32
+      end>
+    Database = FormLogin.dbc
+    Transaction = FormLogin.dbtrans
+    SQL.Strings = (
+      'SELECT * FROM sekolah'
+    )
+    Options = [sqoKeepOpenOnCommit, sqoAutoApplyUpdates, sqoAutoCommit, sqoRefreshUsingSelect]
+    Params = <>
+    Macros = <>
+    Left = 518
+    Top = 8
+  end
+  object dbtrans: TSQLTransaction
+    Active = False
+    Action = caCommit
+    Left = 558
+    Top = 8
+  end
+  object dbsrc: TDataSource
+    Left = 480
+    Top = 8
+  end
+  object dbc: TPQConnection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    Left = 600
+    Top = 8
+  end
 end
